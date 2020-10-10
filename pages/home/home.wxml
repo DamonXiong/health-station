@@ -1,0 +1,12 @@
+<view class="containers">
+  <scroll-view scroll-y="true">
+  </scroll-view>
+  <view class="menu-bottom" style="flex-direction:row;">
+    <view wx:for="{{funcItems}}">
+    <navigator url="redirect?title=redirect" redirect hover-class="other-navigator-hover">
+        <button type="default">{{item.value}}</button>
+      </navigator>
+      <view class="menu-item"></view>
+    </view>
+  </view>
+</view>
